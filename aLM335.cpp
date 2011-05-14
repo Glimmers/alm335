@@ -31,22 +31,22 @@
 aLM335::aLM335() {
   _pin = 0;
   _refVoltage = 5;
-  refFactorMetric = _refVoltage * 100 / 1024;
-  refFactorImperial = _refVoltage * 180 / 1024;
+  refFactorMetric = _refVoltage * 100 / 1023;
+  refFactorImperial = _refVoltage * 180 / 1023;
 }
 
 aLM335::aLM335(int input) {
   _pin = input;
   _refVoltage = 5;
-  refFactorMetric = _refVoltage * 100 / 1024;
-  refFactorImperial = _refVoltage * 180 / 1024;
+  refFactorMetric = _refVoltage * 100 / 1023;
+  refFactorImperial = _refVoltage * 180 / 1023;
 }
 
 aLM335::aLM335(int input, float voltage) {
   _pin = input;
   _refVoltage = voltage;
-  refFactorMetric = _refVoltage * 100 / 1024;
-  refFactorImperial = _refVoltage * 180 / 1024;
+  refFactorMetric = _refVoltage * 100 / 1023;
+  refFactorImperial = _refVoltage * 180 / 1023;
 }
 
 aLM335::aLM335(int input, float voltage, bool externalReference) {
@@ -58,8 +58,8 @@ aLM335::aLM335(int input, float voltage, bool externalReference) {
     analogReference(DEFAULT);
   }
   _refVoltage = voltage;
-  refFactorMetric = _refVoltage * 100 / 1024;
-  refFactorImperial = _refVoltage * 180 / 1024;
+  refFactorMetric = _refVoltage * 100 / 1023;
+  refFactorImperial = _refVoltage * 180 / 1023;
 }
 
 
