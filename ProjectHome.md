@@ -1,0 +1,1 @@
+This library manages all parts of using the LM335 temperature sensor under the arduino, from setting up the ADC, handling the conversions, and providing useful data.
